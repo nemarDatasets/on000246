@@ -2,6 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "enriched",
   "title": "MEG-BIDS Brainstorm data sample",
+  "description": "A single-subject MEG dataset acquired during an auditory oddball paradigm using a CTF 275 system at 2400 Hz sampling rate. The dataset comprises two 6-minute runs with 200 standard tones (440 Hz) and 40 deviant tones (554.4 Hz) per run, along with empty room recordings and anatomical MRI data. This tutorial dataset serves as a reference implementation for the Brainstorm neuroimaging software and includes detailed documentation of stimulus timing delays and head digitization.",
+  "methods_description": "MEG acquisition performed at 2400 Hz using a CTF 275 system with 274 axial gradiometers, 26 reference sensors, 2 EEG electrodes (Cz, Pz), ECG, EOG, and head tracking channels. Auditory stimuli (440 Hz standard and 554.4 Hz deviant tones) delivered binaurally via intra-aural earphones with random inter-stimulus intervals (0.7-1.7 s). Subject performed button-press responses to deviant tones. Head shape and fiducial points digitized using Polhemus Fastrak. Anatomical MRI acquired at 1.5T and processed with FreeSurfer 5.3.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -11,12 +13,45 @@
     "Guiomar Niso": {},
     "Sylvain Baillet": {}
   },
-  "related_identifiers": [
+  "keywords": [
     {
-      "identifier": "10.18112/openneuro.ds000246.v1.0.1",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "term": "MEG"
     },
+    {
+      "term": "auditory oddball"
+    },
+    {
+      "term": "event-related fields"
+    },
+    {
+      "term": "deviant detection"
+    },
+    {
+      "term": "CTF system"
+    },
+    {
+      "term": "Brainstorm"
+    },
+    {
+      "term": "tutorial dataset"
+    },
+    {
+      "term": "head digitization"
+    },
+    {
+      "term": "reference implementation"
+    },
+    {
+      "term": "FreeSurfer"
+    },
+    {
+      "term": "Polhemus"
+    },
+    {
+      "term": "empty room recording"
+    }
+  ],
+  "related_identifiers": [
     {
       "identifier": "10.3389/fnins.2019.00076",
       "identifier_type": "DOI",
@@ -36,6 +71,11 @@
       "identifier": "10.1155/2011/879716",
       "identifier_type": "DOI",
       "relation_type": "References"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds000246.v1.0.1",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
     }
   ],
   "funding_references": [
@@ -44,13 +84,13 @@
       "award_number": "2R01EB009048-05"
     }
   ],
+  "resource_type_specific": "Structural MRI Dataset",
   "modalities": [
     "anat",
     "meg"
   ],
-  "resource_type_specific": "Structural MRI Dataset",
   "sizes": [
-    "0.0 KB (1 files)"
+    "2.5 GB (38 files)"
   ],
   "formats": [
     ".acq",
@@ -73,56 +113,8 @@
     ".newds",
     ".pos",
     ".res4",
-    ".tsv"
+    ".tsv",
+    ".yml"
   ],
-  "description": "A single-subject magnetoencephalography (MEG) dataset acquired during an auditory oddball paradigm using a CTF 275 system. The dataset comprises two 6-minute acquisition runs containing 200 standard tones (440 Hz) and 40 deviant tones (554.4 Hz) presented binaurally, with the subject performing a button-press response task. Anatomical MRI data and detailed head digitization are included, making this dataset suitable for auditory evoked field analysis and as a tutorial resource for neuroimaging software development.",
-  "methods_description": "MEG data were acquired at 2400 Hz using a CTF 275 system with 274 axial gradiometers, 26 reference sensors, 2 EEG electrodes (Cz, Pz), ECG, EOG, and head tracking channels. Auditory stimuli were presented binaurally via intra-aural earphones with random inter-stimulus intervals (0.7-1.7 s). Head shape and fiducial points were digitized using a Polhemus Fastrak device. Anatomical MRI was acquired on a 1.5T scanner and processed with FreeSurfer 5.3.",
-  "keywords": [
-    {
-      "term": "MEG"
-    },
-    {
-      "term": "auditory evoked fields"
-    },
-    {
-      "term": "oddball paradigm"
-    },
-    {
-      "term": "magnetoencephalography"
-    },
-    {
-      "term": "event-related responses"
-    },
-    {
-      "term": "tutorial dataset"
-    },
-    {
-      "term": "CTF 275 system"
-    },
-    {
-      "term": "head digitization"
-    },
-    {
-      "term": "Polhemus Fastrak"
-    },
-    {
-      "term": "auditory oddball"
-    },
-    {
-      "term": "motor response"
-    },
-    {
-      "term": "FreeSurfer"
-    },
-    {
-      "term": "single-subject"
-    },
-    {
-      "term": "structural MRI"
-    },
-    {
-      "term": "Brainstorm"
-    }
-  ],
-  "source_hash": "1e1a59cf6c3209fef7471ef657fc4b55f32653eea20a42e2a7decdaae6cd3006"
+  "source_hash": "29c4ea23bb2970235b3247d79506ee699bde5658a8f21ef775db5396b4c4d949"
 }
